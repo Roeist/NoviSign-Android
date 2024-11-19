@@ -35,7 +35,7 @@ Follow these steps to get this project up and running:
 
 1. Clone the repository:
 
-  git clone https://github.com/Roeist/NoviSign.git
+  git clone https://github.com/Roeist/NoviSign-Android
 
 2. Open in Android Studio:
 
