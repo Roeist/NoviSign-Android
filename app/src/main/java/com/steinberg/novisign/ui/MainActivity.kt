@@ -24,8 +24,6 @@ import com.steinberg.novisign.viewmodels.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
-import kotlin.properties.Delegates
 
 private const val TAG = "MainActivity"
 

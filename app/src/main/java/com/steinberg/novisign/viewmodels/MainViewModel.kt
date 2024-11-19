@@ -25,12 +25,7 @@ import com.steinberg.novisign.data.Playlist
 import com.steinberg.novisign.repository.MediaRepository
 import com.steinberg.novisign.util.NetworkUtil
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.Deferred
-import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.async
-import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.launch
 import okhttp3.ResponseBody
 import java.io.File
