@@ -38,7 +38,7 @@ import java.io.FileOutputStream
 import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 
-const val TAG = "Hila MainViewModel"
+const val TAG = "MainViewModel"
 const val secret_key = "e490b14d-987d-414f-a822-1e7703b37ce4"
 
 @HiltViewModel

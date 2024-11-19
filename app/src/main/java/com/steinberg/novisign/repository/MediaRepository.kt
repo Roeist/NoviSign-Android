@@ -17,21 +17,17 @@ class MediaRepository @Inject constructor(
     suspend fun getPlaylists(screenKey: String): PlaylistResponse? {
         val call = api.getPlaylists(screenKey)
 
-        Log.d("Hila", "MediaRepository getPlaylists: ${call.raw()}")
-
         if (call.isSuccessful) {
             val body = call.body()
 
-            Log.d("Hila", "Body: $body") // Log the response body for inspection
-
             if (body?.playlists == null) {
-                Log.e("Hila", "playList is null in the response.")
+                Log.e(TAG, "playList is null in the response.")
                 return null
             }
 
             return body // If the body is valid, return it
         } else {
-            Log.e("Hila", "Response was not successful: ${call.message()}")
+            Log.e(TAG, "Response was not successful: ${call.message()}")
             return null
         }
       }
@@ -70,10 +66,4 @@ class MediaRepository @Inject constructor(
         }
     }
 
-    // Cache check for downloading media
-    fun isMediaCached(fileKey: String): Boolean {
-        val cacheDir = NoviSignApplication.getCacheDirectory()
-        val file = File(cacheDir, fileKey)
-        return file.exists()
-    }
 }
